@@ -1,1 +1,51 @@
+import React from 'react';
+import img1 from './Homepage_Banners_1920x655_38aEuqC.webp';
+import img2 from './shirt.jpg'
+import img3 from './catban-1220231102104956.jpg'
+
+const Comp1 = () => {
+  return (
+    <div style={{ backgroundColor: 'lavender', minHeight: '100vh', paddingTop: '20px' }}>
+      {/* Navigation Bar */}
+      <div style={{ backgroundColor: 'lightgray', padding: '10px', marginBottom: '20px' }}>
+        <span style={{ marginRight: '20px' }}>Home</span>
+        <span style={{ marginRight: '20px' }}>Shop</span>
+        <span>Contact</span>
+      </div>
+
+      {/* Banner */}
+      <div style={{ backgroundColor: 'lavender', paddingBottom: '20px', paddingTop: '20px', textAlign: 'center' }}>
+        <h1>RIZZ STYLEZ</h1>
+        <p>"Platform where Styling begins"</p>
+        <img src={img1} style={{ width: '100%', maxWidth: '10000px' }} alt="Banner" />
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '50px', fontWeight: 'bold',backgroundColor:'lavender',paddingLeft:'200px',paddingRight:'200px',paddingTop:'250px',paddingBottom:'200px',borderRadius:'50px',marginTop:'100px'}}>
+        "Platform where Styling begins"
+        </div>
+      </div>
+
+      {/* Product Grid */}
+      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '20px', padding: '20px' }}>
+        {/* Product Card 1 */}
+        <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
+          <img src={img2} style={{ width: '100%', marginBottom: '10px' }} alt="Product" />
+          <h2> Corduroy Shirt</h2>
+          <p>₹5999</p>
+          <button style={{ padding: '10px 20px', backgroundColor: 'lightblue', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Add to Cart</button>
+        </div>
+
+        {/* Product Card 2 */}
+        <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
+          <img src={img3} style={{ width: '100%', marginBottom: '10px' }} alt="Product" />
+          <h2>Tshirts</h2>
+          <p>₹1999</p>
+          <button style={{ padding: '10px 20px', backgroundColor: 'lightblue', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Add to Cart</button>
+        </div>
+
+        {/* Add more product cards as needed */}
+      </div>
+    </div>
+  );
+};
+
+export default Comp1;
 
